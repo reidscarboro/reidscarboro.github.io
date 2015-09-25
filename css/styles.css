@@ -65,13 +65,13 @@
 	text-align: right;
 	margin-right: -1px;
 	margin-top: -1px;
-	border-right: 1px solid #c0c0c0;
 	cursor: pointer;
 }
 
 .sidebar .option.selected {
 	border: 1px solid #c0c0c0;
-	border-right: 1px solid white;
+	border-right: none;
+    	background-color: white;
 }
 
 .sidebar .option.optionSpacer {
