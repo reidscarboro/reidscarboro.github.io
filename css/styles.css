@@ -250,6 +250,10 @@ body, html {
 		width: 18%;
 	}
 
+	.topSpacerContainer .spacer.spacer4 {
+		width: 50%;
+	}
+
 	.contentContainer .content.content1 {
 		width: 2%;
 	}
@@ -258,12 +262,21 @@ body, html {
 		width: 18%;
 	}
 
+	.contentContainer .content.content4 {
+		width: 10%;
+	}
+
 	.contentPanel {
 		width: auto;
 	}
 
 	.header {
 		width: 30%;
+	}
+
+	.about {
+		width: 100%;
+		padding: 20px 20px;
 	}
 }
 
