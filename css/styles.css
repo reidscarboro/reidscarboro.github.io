@@ -16,26 +16,58 @@
 	text-align: center;
 }
 
-.spacer {
+.topSpacerContainer {
+	display: table;
+	width: 100%;
 	height: 10px;
+}
+
+.topSpacerContainer .spacer {
+	display: table-cell;
+	height: 10px;
+}
+
+.topSpacerContainer .spacer.spacer1 {
 	width: 10%;
-	float: left;
 }
 
-.borderTop {
-	border-top: 1px solid #c0c0c0;
+.topSpacerContainer .spacer.spacer2 {
+	width: 10%;
 }
 
-.borderLeft {
-	border-left: 1px solid #c0c0c0;
+.topSpacerContainer .spacer.spacer3 {
+	width: 20%;
+	margin-left:1px;
 }
 
-.borderBottom {
-	border-bottom: 1px solid #c0c0c0;
+.topSpacerContainer .spacer.spacer4 {
+	width: 60%;
 }
 
-.borderRight {
-	border-right: 1px solid #c0c0c0;
+.contentContainer {
+	display: table;
+	width: 100%;
+}
+
+.contentContainer .content {
+	display: table-cell;
+}
+
+.contentContainer .content.content1 {
+	width: 10%;
+}
+
+.contentContainer .content.content2 {
+	vertical-align: top;
+	width: 10%;
+}
+
+.contentContainer .content.content3 {
+	width: 60%;
+}
+
+.contentContainer .content.content4 {
+	width: 20%;
 }
 
 .tableContainer{
@@ -54,13 +86,10 @@
 }
 
 .sidebar {
-	width: 10%;
-	display: table-cell;
-	vertical-align: top;
 	border-right: 1px solid #c0c0c0;
 }
 
-.sidebar .option {
+.option {
 	padding: 8px;
 	text-align: right;
 	margin-right: -1px;
@@ -69,19 +98,18 @@
 	border-right: 1px solid #c0c0c0;
 }
 
-.sidebar .option.selected {
+.option.selected {
 	border: 1px solid #c0c0c0;
 	border-right: none;
-    	background-color: white;
+	background-color: white;
 }
 
-.sidebar .option.optionSpacer {
-	min-height: 200px;
+.optionSpacer {
+	min-height: 50px;
 }
 
 .contentPanel {
 	padding: 8px;
-	display: table-cell;
 	border-bottom: 1px solid #c0c0c0;
 }
 
@@ -165,23 +193,6 @@
 	margin-bottom: 50px;
 }
 
-.socialLinksContainer {
-	margin-top:5px;
-	display: table;
-	width: 100%;
-}
-
-.socialLinksSpacer {
-	display: table-cell;
-	width: 20%;
-}
-
-.socialLinksContent {
-	display: table-cell;
-	color: #c0c0c0;
-	text-align: center;
-}
-
 .socialLink {
 	background-color: #c0c0c0;
 	color: white;
@@ -206,10 +217,59 @@
 	margin: 10px 10px 0 0;
 }
 
+.borderTop {
+	border-top: 1px solid #c0c0c0;
+}
+
+.borderLeft {
+	border-left: 1px solid #c0c0c0;
+}
+
+.borderBottom {
+	border-bottom: 1px solid #c0c0c0;
+}
+
+.borderRight {
+	border-right: 1px solid #c0c0c0;
+}
 
 body, html {
 	font-family: Arcon-Regular;
 	width: 100%;
 	padding: 0;
 	margin: 0;
+}
+
+@media (max-width: 700px){
+
+	.topSpacerContainer .spacer.spacer1 {
+		width: 2%;
+	}
+
+	.topSpacerContainer .spacer.spacer2 {
+		width: 18%;
+	}
+
+	.contentContainer .content.content1 {
+		width: 2%;
+	}
+
+	.contentContainer .content.content2 {
+		width: 18%;
+	}
+
+	.contentPanel {
+		width: auto;
+	}
+
+	.header {
+		width: 30%;
+	}
+}
+
+@media (max-width: 475px){
+	.option {
+		padding: 8px 2px;
+		text-align: center;
+	}
 }
