@@ -182,7 +182,7 @@
 }
 
 .about {
-	width: 75%;
+	width: 85%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -277,6 +277,16 @@ body, html {
 	.about {
 		width: 100%;
 		padding: 20px 20px;
+		text-align: left;
+	}
+
+	.projectDescription {
+		display: block;
+		float: none;
+		clear: both;
+		width:100%;
+		padding: 0;
+		padding-top: 10px;
 	}
 }
 
