@@ -11,6 +11,13 @@
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
+.homeContent{
+	max-width: 600px;
+	margin: auto;
+}
+.homeProjectDescription {
+	color: #616161;
+}
 .header {
 	font-size: 24px;
 }
